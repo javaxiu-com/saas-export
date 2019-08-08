@@ -1,8 +1,8 @@
 
+‡squid:S1488W"pImmediately return this expression instead of assigning it to the temporary variable "querySendDetailsResponse".(åÀ£÷
 wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ñš·³þÿÿÿÿ
-bsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(£õî”
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(áòëøþÿÿÿÿ
 bsquid:S1192"FDefine a constant instead of duplicating this literal "10000" 4 times.(¾É…§ÿÿÿÿÿ
 ~squid:S14888"gImmediately return this expression instead of assigning it to the temporary variable "sendSmsResponse".(’Œù¶
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(áòëøþÿÿÿÿ
-‡squid:S1488W"pImmediately return this expression instead of assigning it to the temporary variable "querySendDetailsResponse".(åÀ£÷
 hsquid:S1192""LDefine a constant instead of duplicating this literal "cn-hangzhou" 6 times.(À†Ãùÿÿÿÿ
+bsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(£õî”

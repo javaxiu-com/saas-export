@@ -1,10 +1,10 @@
 
-gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ØÓ§êÿÿÿÿÿ
-?squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-`squid:S1192J"JDefine a constant instead of duplicating this literal "loginUser" 3 times.(ø®¯
 csquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(¶Ýõú
-dsquid:S1192L"HDefine a constant instead of duplicating this literal "modules" 3 times.(ö®óÍýÿÿÿÿ
-]squid:S1192Q"FDefine a constant instead of duplicating this literal "error" 3 times.(Ÿ¦‰·
-fsquid:S1192N"JDefine a constant instead of duplicating this literal "home/main" 3 times.(ÐÁà¢ýÿÿÿÿ
-@squid:S1148„"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
 Ysquid:S1858d"C"getOpenId" returns a string, there's no need to call "toString()".(¡„év
+@squid:S1148„"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+]squid:S1192Q"FDefine a constant instead of duplicating this literal "error" 3 times.(Ÿ¦‰·
+?squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+dsquid:S1192L"HDefine a constant instead of duplicating this literal "modules" 3 times.(ö®óÍýÿÿÿÿ
+gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ØÓ§êÿÿÿÿÿ
+fsquid:S1192N"JDefine a constant instead of duplicating this literal "home/main" 3 times.(ÐÁà¢ýÿÿÿÿ
+`squid:S1192J"JDefine a constant instead of duplicating this literal "loginUser" 3 times.(ø®¯

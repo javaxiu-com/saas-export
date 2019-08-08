@@ -1,16 +1,16 @@
 
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢è¸œúÿÿÿÿ
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”©›µûÿÿÿÿ
-T
-squid:S106B"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
-O
-squid:S1061"9Replace this use of System.out or System.err by a logger.(²¬ª‰
 isquid:S2095>"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(‰Äëùÿÿÿÿ
-fsquid:S2674@"JCheck the return value of the "read" call to see how many bytes were read.(¥«±°ÿÿÿÿÿ
-Qsquid:S1141'"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(íî¢Áùÿÿÿÿ
 wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ââåşÿÿÿÿ
+Qsquid:S11410"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Qsquid:S1141'"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
 T
 squid:S106/"9Replace this use of System.out or System.err by a logger.(áçöéúÿÿÿÿ
+T
+squid:S106B"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
 ]squid:S1075="ARefactor your code to get this URI from a customizable parameter.(™ü¦¸ûÿÿÿÿ
-Qsquid:S11410"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(íî¢Áùÿÿÿÿ
+O
+squid:S1061"9Replace this use of System.out or System.err by a logger.(²¬ª‰
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”©›µûÿÿÿÿ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢è¸œúÿÿÿÿ
+fsquid:S2674@"JCheck the return value of the "read" call to see how many bytes were read.(¥«±°ÿÿÿÿÿ

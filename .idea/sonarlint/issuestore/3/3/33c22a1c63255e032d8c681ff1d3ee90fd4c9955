@@ -1,20 +1,20 @@
 
+osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+?squid:S1948ú"'Make "value" transient or serializable.(þû½ˆ
+hsquid:S1192Ò"KDefine a constant instead of duplicating this literal "invoiceId" 12 times.(Í›ƒªþÿÿÿÿ
+xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
 ^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
 
-[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
-Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
-hsquid:S1192Ò"KDefine a constant instead of duplicating this literal "invoiceId" 12 times.(Í›ƒªþÿÿÿÿ
-dsquid:S1192¤"LDefine a constant instead of duplicating this literal "tradeTerms" 12 times.(­û¯°
+dsquid:S1192ê"GDefine a constant instead of duplicating this literal "state" 10 times.(¬À‰ñúÿÿÿÿ
+bsquid:S1192¦"JDefine a constant instead of duplicating this literal "createBy" 12 times.(¾õÆÈ
+dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ
 isquid:S1192²"LDefine a constant instead of duplicating this literal "createTime" 10 times.(ÇàÌóûÿÿÿÿ
+qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+dsquid:S1192¤"LDefine a constant instead of duplicating this literal "tradeTerms" 12 times.(­û¯°
+Jsquid:S1948ü"-Make "secondValue" transient or serializable.(½Žì³øÿÿÿÿ
 isquid:S1192ì"LDefine a constant instead of duplicating this literal "createDept" 12 times.(Œ»áÑüÿÿÿÿ
 dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
-osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
-xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
-qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
-dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ
-bsquid:S1192¦"JDefine a constant instead of duplicating this literal "createBy" 12 times.(¾õÆÈ
-Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
-?squid:S1948ú"'Make "value" transient or serializable.(þû½ˆ
-Jsquid:S1948ü"-Make "secondValue" transient or serializable.(½Žì³øÿÿÿÿ
-Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
-dsquid:S1192ê"GDefine a constant instead of duplicating this literal "state" 10 times.(¬À‰ñúÿÿÿÿ
