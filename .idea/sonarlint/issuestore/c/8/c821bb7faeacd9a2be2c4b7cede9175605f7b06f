@@ -1,0 +1,27 @@
+
+isquid:S1192˜"QDefine a constant instead of duplicating this literal "exportProductId" 12 times.(ÁéÍê
+fsquid:S1192¶"IDefine a constant instead of duplicating this literal "orderNo" 10 times.(Ö„şóùÿÿÿÿ
+fsquid:S1192°"NDefine a constant instead of duplicating this literal "productImage" 12 times.(­‡ü¢
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+`squid:S1192ú"HDefine a constant instead of duplicating this literal "amount" 10 times.(­Õ¦
+Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+jsquid:S1192¸"MDefine a constant instead of duplicating this literal "companyName" 12 times.(ˆ„éòüÿÿÿÿ
+^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+`squid:S1192¼"IDefine a constant instead of duplicating this literal "cnumber" 10 times.(á´j
+xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
+gsquid:S1192Ş"JDefine a constant instead of duplicating this literal "exportId" 12 times.(éÀ–Éûÿÿÿÿ
+dsquid:S1192¾"GDefine a constant instead of duplicating this literal "price" 10 times.(º ‘Öøÿÿÿÿ
+?squid:S1948Š	"'Make "value" transient or serializable.(şû½ˆ
+osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+csquid:S1192¤"KDefine a constant instead of duplicating this literal "factoryId" 12 times.(£¹Ê›
+csquid:S1192ò"KDefine a constant instead of duplicating this literal "companyId" 12 times.(İ®Ûù
+esquid:S1192ö"MDefine a constant instead of duplicating this literal "productDesc" 12 times.(º²®ñ
+Jsquid:S1948Œ	"-Make "secondValue" transient or serializable.(½ì³øÿÿÿÿ
+jsquid:S1192ø"MDefine a constant instead of duplicating this literal "packingUnit" 12 times.(ŞúİÏıÿÿÿÿ
+hsquid:S1192ê"KDefine a constant instead of duplicating this literal "productNo" 12 times.(Ö»ˆüÿÿÿÿ
+dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºşÿÿÿÿ

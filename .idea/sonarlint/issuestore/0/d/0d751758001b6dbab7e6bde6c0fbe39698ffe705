@@ -1,0 +1,21 @@
+
+hsquid:S1192˜"KDefine a constant instead of duplicating this literal "inputDate" 10 times.(’ı¥†şÿÿÿÿ
+isquid:S1192œ"LDefine a constant instead of duplicating this literal "createDept" 12 times.(Œ»áÑüÿÿÿÿ
+[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
+dsquid:S1192š"GDefine a constant instead of duplicating this literal "state" 10 times.(¬À‰ñúÿÿÿÿ
+xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+asquid:S1192Ô"IDefine a constant instead of duplicating this literal "inputBy" 12 times.(’¾
+isquid:S1192â"LDefine a constant instead of duplicating this literal "createTime" 10 times.(ÇàÌóûÿÿÿÿ
+bsquid:S1192Ö"JDefine a constant instead of duplicating this literal "createBy" 12 times.(¾õÆÈ
+?squid:S1948ª"'Make "value" transient or serializable.(şû½ˆ
+qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+Jsquid:S1948¬"-Make "secondValue" transient or serializable.(½ì³øÿÿÿÿ
+osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+hsquid:S1192Ò"KDefine a constant instead of duplicating this literal "financeId" 12 times.(îôıœşÿÿÿÿ
+^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºşÿÿÿÿ

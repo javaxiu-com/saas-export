@@ -1,0 +1,28 @@
+
+ksquid:S1192—"SDefine a constant instead of duplicating this literal "contractProductId" 12 times.(ô—¹ë
+jsquid:S1192é"MDefine a constant instead of duplicating this literal "factoryName" 12 times.(ùÙÇšùÿÿÿÿ
+esquid:S1192»"MDefine a constant instead of duplicating this literal "productDesc" 12 times.(º²®ñ
+Bsquid:S1948ž"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+dsquid:S1192ƒ"GDefine a constant instead of duplicating this literal "price" 10 times.(º ‘Öøÿÿÿÿ
+csquid:S1192·"KDefine a constant instead of duplicating this literal "companyId" 12 times.(Ý®Ûù
+xsquid:S1488‡"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+?squid:S1948Ï	"'Make "value" transient or serializable.(þû½ˆ
+qsquid:S2293¢"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+^squid:S00112Á"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+fsquid:S1192û"IDefine a constant instead of duplicating this literal "orderNo" 10 times.(Ö„þóùÿÿÿÿ
+jsquid:S1192ý"MDefine a constant instead of duplicating this literal "companyName" 12 times.(ˆ„éòüÿÿÿÿ
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+Tsquid:S1155z">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+csquid:S1192£"KDefine a constant instead of duplicating this literal "factoryId" 12 times.(£¹Ê›
+osquid:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+dsquid:S1192Ý"LDefine a constant instead of duplicating this literal "contractId" 12 times.(–Î•³
+jsquid:S1192"MDefine a constant instead of duplicating this literal "packingUnit" 12 times.(ÞúÝÏýÿÿÿÿ
+hsquid:S1192¯"KDefine a constant instead of duplicating this literal "productNo" 12 times.(Ö»ˆüÿÿÿÿ
+`squid:S1192Ç"IDefine a constant instead of duplicating this literal "cnumber" 10 times.(á´Žj
+[squid:S1155¦">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
+dsquid:S00112º"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ
+`squid:S1192¿"HDefine a constant instead of duplicating this literal "amount" 10 times.(­ÕŽ¦
+fsquid:S1192õ"NDefine a constant instead of duplicating this literal "productImage" 12 times.(­‡ü¢
+dsquid:S00112³"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+Jsquid:S1948Ñ	"-Make "secondValue" transient or serializable.(½Žì³øÿÿÿÿ

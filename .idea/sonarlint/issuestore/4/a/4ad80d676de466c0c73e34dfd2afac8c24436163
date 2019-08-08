@@ -1,0 +1,43 @@
+
+isquid:S1192¸"LDefine a constant instead of duplicating this literal "createTime" 10 times.(·í“°øÿÿÿÿ
+bsquid:S1192î"JDefine a constant instead of duplicating this literal "crequest" 12 times.(®ßÇŞ
+bsquid:S1192ú"JDefine a constant instead of duplicating this literal "shipTime" 10 times.(¦Š–¬
+bsquid:S1192ô"JDefine a constant instead of duplicating this literal "updateBy" 12 times.(‰­¾ş
+fsquid:S1192˜"IDefine a constant instead of duplicating this literal "offeror" 12 times.(Ï¡••üÿÿÿÿ
+osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+esquid:S1192´"HDefine a constant instead of duplicating this literal "proNum" 10 times.(‹Êéşÿÿÿÿ
+Jsquid:S1948"-Make "secondValue" transient or serializable.(½ì³øÿÿÿÿ
+[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
+^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+?squid:S1948"'Make "value" transient or serializable.(şû½ˆ
+gsquid:S1192ê"JDefine a constant instead of duplicating this literal "outState" 10 times.(ÀÉ¡Òÿÿÿÿÿ
+esquid:S1192ğ"HDefine a constant instead of duplicating this literal "extNum" 10 times.(ı¨³¬úÿÿÿÿ
+dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºşÿÿÿÿ
+isquid:S1192º"LDefine a constant instead of duplicating this literal "updateTime" 10 times.(¾£ü¨øÿÿÿÿ
+_squid:S1192ø
+"GDefine a constant instead of duplicating this literal "state" 10 times.(“ÉÕ
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+msquid:S1192ò"PDefine a constant instead of duplicating this literal "deliveryPeriod" 10 times.(šÓºşÿÿÿÿ
+isquid:S1192ì	"LDefine a constant instead of duplicating this literal "printStyle" 12 times.(šçÍ×üÿÿÿÿ
+jsquid:S1192¤"MDefine a constant instead of duplicating this literal "signingDate" 10 times.(”µ†Áùÿÿÿÿ
+fsquid:S1192à"IDefine a constant instead of duplicating this literal "inputBy" 12 times.(ËÔ“„üÿÿÿÿ
+isquid:S1192´"LDefine a constant instead of duplicating this literal "customName" 12 times.(Ï¯…´øÿÿÿÿ
+bsquid:S1192®"JDefine a constant instead of duplicating this literal "oldState" 10 times.(ªÅá
+csquid:S1192ö"KDefine a constant instead of duplicating this literal "companyId" 12 times.(İ®Ûù
+isquid:S1192Ş"LDefine a constant instead of duplicating this literal "contractNo" 12 times.(Âö»şÿÿÿÿ
+esquid:S1192²"MDefine a constant instead of duplicating this literal "totalAmount" 10 times.(Ÿ‘ÊÜ
+asquid:S1192¦"IDefine a constant instead of duplicating this literal "checkBy" 12 times.(Ñë»
+`squid:S1192²
+"HDefine a constant instead of duplicating this literal "remark" 12 times.(íêÑ
+gsquid:S1192¬"JDefine a constant instead of duplicating this literal "createBy" 12 times.(ÿ÷¿¥üÿÿÿÿ
+isquid:S1192¦	"LDefine a constant instead of duplicating this literal "tradeTerms" 12 times.(ô˜ÙÀøÿÿÿÿ
+qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+dsquid:S1192ò"LDefine a constant instead of duplicating this literal "createDept" 12 times.(›óõé
+csquid:S1192¶"KDefine a constant instead of duplicating this literal "importNum" 10 times.(ºå•µ
+Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+jsquid:S1192¼"MDefine a constant instead of duplicating this literal "companyName" 12 times.(ˆ„éòüÿÿÿÿ
+hsquid:S1192ì"KDefine a constant instead of duplicating this literal "inspector" 12 times.(ÑÂÇ‘şÿÿÿÿ
+xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì

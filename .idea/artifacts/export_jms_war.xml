@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="export_jms:war">
+    <output-path>$PROJECT_DIR$/export_jms/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>export_jms</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="export_jms-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="export_jms:war exploded" />
+    </root>
+  </artifact>
+</component>

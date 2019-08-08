@@ -1,0 +1,6 @@
+
+ysquid:S3008"]Rename this field "DEFAULT_PAGE_RANGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ÿûùÿÿÿÿ
+Bsquid:S1948"&Make "list" transient or serializable.(ÞºÄüÿÿÿÿ
+Rsquid:S1068"6Remove this unused "DEFAULT_PAGE_RANGE" private field.(­ÿûùÿÿÿÿ
+Qsquid:S18541":Remove this useless assignment to local variable "endNum".(ãÔ¤å
+isquid:S3776'"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ËÖœÿ

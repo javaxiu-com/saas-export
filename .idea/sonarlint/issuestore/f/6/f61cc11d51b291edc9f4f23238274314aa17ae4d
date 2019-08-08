@@ -1,0 +1,29 @@
+
+gsquid:S1192ú"JDefine a constant instead of duplicating this literal "createBy" 12 times.(ÿ÷¿¥üÿÿÿÿ
+Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
+isquid:S1192†"LDefine a constant instead of duplicating this literal "createTime" 10 times.(·í“°øÿÿÿÿ
+esquid:S1192ê"MDefine a constant instead of duplicating this literal "invoiceDate" 10 times.(µ»×ñ
+csquid:S1192²"KDefine a constant instead of duplicating this literal "exportIds" 12 times.(€àùä
+ksquid:S1192ì"NDefine a constant instead of duplicating this literal "descriptions" 12 times.(Âì§šüÿÿÿÿ
+[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
+_squid:S1192¾"GDefine a constant instead of duplicating this literal "state" 10 times.(“ÉÕ
+osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
+xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
+^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
+
+Jsquid:S1948Ü	"-Make "secondValue" transient or serializable.(½ì³øÿÿÿÿ
+Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
+_squid:S1192¦"GDefine a constant instead of duplicating this literal "marks" 12 times.(ù‚Ø§
+`squid:S1192˜"HDefine a constant instead of duplicating this literal "seller" 12 times.(‡¨ı
+hsquid:S1192ø"KDefine a constant instead of duplicating this literal "exportNos" 12 times.(Ûâª¹ûÿÿÿÿ
+dsquid:S1192À"LDefine a constant instead of duplicating this literal "createDept" 12 times.(›óõé
+dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
+Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
+gsquid:S1192Ò"ODefine a constant instead of duplicating this literal "packingListId" 12 times.(†Ó¦Õ
+dsquid:S1192Ş"GDefine a constant instead of duplicating this literal "buyer" 12 times.( Å„üÿÿÿÿ
+csquid:S1192Â"KDefine a constant instead of duplicating this literal "companyId" 12 times.(İ®Ûù
+qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
+jsquid:S1192ˆ	"MDefine a constant instead of duplicating this literal "companyName" 12 times.(ˆ„éòüÿÿÿÿ
+dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºşÿÿÿÿ
+?squid:S1948Ú	"'Make "value" transient or serializable.(şû½ˆ
+csquid:S1192¤"KDefine a constant instead of duplicating this literal "invoiceNo" 12 times.(ÿÍ½å
