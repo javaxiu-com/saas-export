@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.cargo.ExtCproductDao">
+    <resultMap id="BaseResultMap" type="com.gyhqq.domain.cargo.ExtCproduct">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="contract_product_id" jdbcType="VARCHAR" property="contractProductId"/>
+        <result column="contract_id" jdbcType="VARCHAR" property="contractId"/>
+        <result column="factory_id" jdbcType="VARCHAR" property="factoryId"/>
+        <result column="factory_name" jdbcType="VARCHAR" property="factoryName"/>
+        <result column="product_no" jdbcType="VARCHAR" property="productNo"/>
+        <result column="product_image" jdbcType="VARCHAR" property="productImage"/>
+        <result column="product_desc" jdbcType="VARCHAR" property="productDesc"/>
+        <result column="packing_unit" jdbcType="VARCHAR" property="packingUnit"/>
+        <result column="product_request" jdbcType="VARCHAR" property="productRequest"/>
+        <result column="cnumber" jdbcType="DECIMAL" property="cnumber"/>
+        <result column="price" jdbcType="DECIMAL" property="price"/>
+        <result column="amount" jdbcType="DECIMAL" property="amount"/>
+        <result column="order_no" jdbcType="DECIMAL" property="orderNo"/>
+        <result column="company_id" jdbcType="VARCHAR" property="companyId"/>
+        <result column="company_name" jdbcType="VARCHAR" property="companyName"/>
+    </resultMap>
+
+    <!--findByProductId-->
+    <select id="findByProductId" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select * from co_ext_cproduct where contract_product_id =#{productId}
+    </select>
+
+    <sql id="Base_Column_List">
+        id, contract_product_id,contract_id, factory_id, factory_name, product_no, product_image,product_request,
+        product_desc, packing_unit, cnumber, price, amount, order_no, company_id, company_name
+    </sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <select id="selectByExample" parameterType="com.gyhqq.domain.cargo.ExtCproductExample" resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from co_ext_cproduct
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <!--根据id查询-->
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from co_ext_cproduct where id = #{id}
+    </select>
+
+    <!--根据id删除-->
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        delete from co_ext_cproduct where id = #{id}
+    </delete>
+
+    <!--保存-->
+    <insert id="insertSelective" parameterType="com.gyhqq.domain.cargo.ExtCproduct">
+        insert into co_ext_cproduct
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="contractProductId != null">
+                contract_product_id,
+            </if>
+            <if test="contractId != null">
+                contract_id,
+            </if>
+            <if test="factoryId != null">
+                factory_id,
+            </if>
+            <if test="factoryName != null">
+                factory_name,
+            </if>
+            <if test="productNo != null">
+                product_no,
+            </if>
+            <if test="productImage != null">
+                product_image,
+            </if>
+            <if test="productDesc != null">
+                product_desc,
+            </if>
+            <if test="packingUnit != null">
+                packing_unit,
+            </if>
+            <if test="cnumber != null">
+                cnumber,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="amount != null">
+                amount,
+            </if>
+            <if test="orderNo != null">
+                order_no,
+            </if>
+            <if test="companyId != null">
+                company_id,
+            </if>
+            <if test="companyName != null">
+                company_name,
+            </if>
+            <if test="productRequest != null">
+                product_request,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=VARCHAR},
+            </if>
+            <if test="contractProductId != null">
+                #{contractProductId,jdbcType=VARCHAR},
+            </if>
+            <if test="contractId != null">
+                #{contractId,jdbcType=VARCHAR},
+            </if>
+            <if test="factoryId != null">
+                #{factoryId,jdbcType=VARCHAR},
+            </if>
+            <if test="factoryName != null">
+                #{factoryName,jdbcType=VARCHAR},
+            </if>
+            <if test="productNo != null">
+                #{productNo,jdbcType=VARCHAR},
+            </if>
+            <if test="productImage != null">
+                #{productImage,jdbcType=VARCHAR},
+            </if>
+            <if test="productDesc != null">
+                #{productDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="packingUnit != null">
+                #{packingUnit,jdbcType=VARCHAR},
+            </if>
+            <if test="cnumber != null">
+                #{cnumber,jdbcType=DECIMAL},
+            </if>
+            <if test="price != null">
+                #{price,jdbcType=DECIMAL},
+            </if>
+            <if test="amount != null">
+                #{amount,jdbcType=DECIMAL},
+            </if>
+            <if test="orderNo != null">
+                #{orderNo,jdbcType=DECIMAL},
+            </if>
+            <if test="companyId != null">
+                #{companyId,jdbcType=VARCHAR},
+            </if>
+            <if test="companyName != null">
+                #{companyName,jdbcType=VARCHAR},
+            </if>
+            <if test="productRequest != null">
+                #{productRequest,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!--根据id更新-->
+    <update id="updateByPrimaryKeySelective" parameterType="com.gyhqq.domain.cargo.ExtCproduct">
+        update co_ext_cproduct
+        <set>
+            <if test="contractProductId != null">
+                contract_product_id = #{contractProductId,jdbcType=VARCHAR},
+            </if>
+            <if test="contractId != null">
+                contract_id = #{contractId,jdbcType=VARCHAR},
+            </if>
+            <if test="factoryId != null">
+                factory_id = #{factoryId,jdbcType=VARCHAR},
+            </if>
+            <if test="factoryName != null">
+                factory_name = #{factoryName,jdbcType=VARCHAR},
+            </if>
+            <if test="productNo != null">
+                product_no = #{productNo,jdbcType=VARCHAR},
+            </if>
+            <if test="productImage != null">
+                product_image = #{productImage,jdbcType=VARCHAR},
+            </if>
+            <if test="productDesc != null">
+                product_desc = #{productDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="packingUnit != null">
+                packing_unit = #{packingUnit,jdbcType=VARCHAR},
+            </if>
+            <if test="cnumber != null">
+                cnumber = #{cnumber,jdbcType=DECIMAL},
+            </if>
+            <if test="price != null">
+                price = #{price,jdbcType=DECIMAL},
+            </if>
+            <if test="amount != null">
+                amount = #{amount,jdbcType=DECIMAL},
+            </if>
+            <if test="orderNo != null">
+                order_no = #{orderNo,jdbcType=DECIMAL},
+            </if>
+            <if test="companyId != null">
+                company_id = #{companyId,jdbcType=VARCHAR},
+            </if>
+            <if test="companyName != null">
+                company_name = #{companyName,jdbcType=VARCHAR},
+            </if>
+            <if test="productRequest != null">
+                product_request = #{productRequest,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+
+
+</mapper>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.system.ModuleDao">
+
+    <resultMap id="BaseModuleMap" type="com.gyhqq.domain.system.Module">
+        <id column="module_id" property="id"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="parent_name" property="parentName"/>
+        <result column="name" property="name"/>
+        <result column="layer_num" property="layerNum"/>
+        <result column="is_leaf" property="isLeaf"/>
+        <result column="ico" property="ico"/>
+        <result column="cpermission" property="cpermission"/>
+        <result column="curl" property="curl"/>
+        <result column="ctype" property="ctype"/>
+        <result column="state" property="state"/>
+        <result column="belong" property="belong"/>
+        <result column="cwhich" property="cwhich"/>
+        <result column="quote_num" property="quoteNum"/>
+        <result column="remark" property="remark"/>
+        <result column="order_no" property="orderNo"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseModuleMap">
+        select * from ss_module
+    </select>
+    <insert id="save">
+        insert into ss_module
+        (
+        module_id,
+        parent_id,
+        parent_name,
+        name,
+        layer_num,
+        is_leaf,
+        ico,
+        cpermission,
+        curl,
+        ctype,
+        state,
+        belong,
+        cwhich,
+        quote_num,
+        remark,
+        order_no
+        )values
+        (
+        #{id},
+        #{parentId},
+        #{parentName},
+        #{name},
+        #{layerNum},
+        #{isLeaf},
+        #{ico},
+        #{cpermission},
+        #{curl},
+        #{ctype},
+        #{state},
+        #{belong},
+        #{cwhich},
+        #{quoteNum},
+        #{remark},
+        #{orderNo}
+        )
+    </insert>
+
+    <select id="findById" resultMap="BaseModuleMap">
+        select * from ss_module where module_id = #{id}
+    </select>
+
+    <update id="update">
+        update ss_module set
+        parent_id=#{parentId},
+        parent_name=#{parentName},
+        name=#{name},
+        layer_num=#{layerNum},
+        is_leaf=#{isLeaf},
+        ico=#{ico},
+        cpermission=#{cpermission},
+        curl=#{curl},
+        ctype=#{ctype},
+        state=#{state},
+        belong=#{belong},
+        cwhich=#{cwhich},
+        quote_num=#{quoteNum},
+        remark=#{remark},
+        order_no=#{orderNo}
+        where module_id=#{id}
+    </update>
+
+    <delete id="delete">
+        delete from ss_module where module_id = #{id}
+    </delete>
+
+    <select id="findByRoleId" resultMap="BaseModuleMap">
+        SELECT b.* FROM pe_role_module a,ss_module b WHERE a.module_id=b.module_id AND role_id=#{id}
+    </select>
+
+    <select id="findByBelong" resultMap="BaseModuleMap">
+        select * from ss_module where belong=#{belong}
+    </select>
+
+    <select id="findByUserId" resultMap="BaseModuleMap">
+        SELECT DISTINCT c.* FROM pe_role_user a ,pe_role_module b ,ss_module c
+        WHERE a.role_id=b.role_id
+        AND b.module_id = c.module_id
+        AND a.user_id=#{userId};
+    </select>
+</mapper>

@@ -1,0 +1,141 @@
+html,body{
+	font-family: "微软雅黑";
+	background-color: #F2F2F2;
+}
+i {
+	font-style: normal;
+	color: #e84e0e;
+    padding-left: 4px;
+}
+.error {
+	color: #e84e0e;
+}
+/*head*/
+.loginnav {
+	background: #fff;
+}
+.logintitle {
+	font-size: 18px;
+	line-height: 50px;
+	padding-left: 10px;
+	color: #999;
+}
+
+.loginnav .navbar-default {
+	margin-bottom: 0;
+	padding: 10px;
+	background: #fff;
+}
+
+.loginnav .navbar-brand {
+	padding: 0
+}
+/*process*/
+.process {
+	padding: 0 0 25px ;
+	margin:15px 0;
+	border: 1px solid #e6e3e3;
+	background-color: #fff;
+}
+.process .bar  {
+	margin:25px 0 0 140px;
+    display: inline-block;
+    position: relative;
+	
+}
+.process .bar .line{
+	border:1px  solid #d8d8d8;
+    width: 80%;
+    height: 0;
+    border-width: 1px 0;
+    position: absolute;
+    top: 19px;
+    left: 0;
+}
+.process .bar dl {
+	height: 64px;
+    width: 64px;
+    background-color: #fff;
+    position: relative;
+    z-index: 4;
+    margin-right: 180px;
+    display: inline-block;
+    
+}
+.bar dl .step {
+	background: transparent;
+    border: 1px solid #bfbfbf;
+    width: 46px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 22px;
+    padding: 11px 12px 11px 7px;
+    font-style: italic;
+    color: #ada8a8;
+    font-size:15px;
+}
+.bar .steps  dd {
+	color: #949494;
+}
+.bar .steps.done dd {
+	font-weight: bold;
+	color: #000;
+}
+.bar .steps.done  dt{
+	background-color: #e84e0e;
+	color: #fff;
+	border: 1px solid #e84e0e;
+}
+.bar dl dd{
+	text-align: center;
+}
+
+/*form*/
+.process form {
+	padding: 0 15px;
+}
+form .form-item {
+	/*border-bottom: 1px solid #d6d4d4;*/
+}
+ .form-item h4 {
+ 	line-height: 36px;
+ 	text-indent: 28px;
+ 	margin-bottom: 10px;
+ 	font-weight: bold;
+ }
+ .form-item .forms {
+ 	overflow: hidden;
+ }
+ .forms .form-group {
+ 	clear: both;
+ 	overflow:hidden
+ }
+ .form-group .control-label{
+ 	text-align: right;
+ 	line-height: 34px;
+ 	font-weight: normal;
+ }
+ form .btn-submit {
+ 	margin-left: -21px;
+ }
+ /*审核*/
+.shen-box {
+	padding: 25px;
+}
+.shen-box p {
+	line-height: 26px;
+	font-size: 16px;
+}
+.shen-box p span {
+	font-size:20px;
+	font-weight: bold;
+	color: #e84e0e;
+}
+.shen-box .link {
+	margin-top: 15px;
+}
+/*footer*/
+.copyright {
+	line-height: 26px;
+	color: #999;
+}

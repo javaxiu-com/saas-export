@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.system.DeptDao">
+
+    <resultMap id="BaseResultMap" type="com.gyhqq.domain.system.Dept">
+        <id column="dept_id" property="id"/>
+        <result column="dept_name" property="deptName"/>
+        <result column="state" property="state"/>
+        <!--<result column="parent_id" property="parentId"/>-->
+        <result column="company_id" property="companyId"/>
+        <result column="company_name" property="companyName"/>
+        <association property="parent" javaType="com.gyhqq.domain.system.Dept"
+                     select="com.gyhqq.dao.system.DeptDao.findById" column="parent_id"></association>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from pe_dept where company_id = #{companyId}
+    </select>
+
+    <select id="findById" resultMap="BaseResultMap">
+        select * from pe_dept where dept_id = #{id}
+    </select>
+
+    <insert id="save">
+        insert into pe_dept
+        (
+            dept_id,
+            dept_name,
+            parent_id,
+            state,
+            company_id,
+            company_name
+        )values
+        (
+            #{id},
+            #{deptName},
+            #{parent.id},
+            #{state},
+            #{companyId},
+            #{companyName}
+        )
+    </insert>
+
+    <update id="update">
+        update pe_dept set
+        dept_name=#{deptName},
+        parent_id=#{parent.id},
+        state=#{state},
+        company_id=#{companyId},
+        company_name=#{companyName}
+        where dept_id =#{id}
+    </update>
+
+    <delete id="delete">
+        delete from pe_dept where dept_id=#{id}
+    </delete>
+</mapper>

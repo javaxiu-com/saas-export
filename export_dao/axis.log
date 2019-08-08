@@ -1,0 +1,69 @@
+2019-07-09 19:47:37,631 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Tue Jul 09 19:47:37 CST 2019]; root of context hierarchy
+2019-07-09 19:47:37,773 142    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-09 19:47:40,104 2473   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-09 19:47:41,577 3946   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-09 19:50:06,724 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Tue Jul 09 19:50:06 CST 2019]; root of context hierarchy
+2019-07-09 19:50:06,908 184    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-09 19:50:09,300 2576   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-09 19:50:10,850 4126   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-09 22:38:57,015 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Tue Jul 09 22:38:56 CST 2019]; root of context hierarchy
+2019-07-09 22:38:57,189 174    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-09 22:38:59,820 2805   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-09 22:41:36,158 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Tue Jul 09 22:41:36 CST 2019]; root of context hierarchy
+2019-07-09 22:41:36,376 218    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-09 22:41:39,077 2919   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-09 22:41:40,841 4683   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 13:49:27,841 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Wed Jul 10 13:49:27 CST 2019]; root of context hierarchy
+2019-07-10 13:49:28,203 362    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-10 13:49:31,230 3389   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-10 13:49:32,639 4798   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 13:49:33,225 5384   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-10 13:49:33,288 5447   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-07-10 13:51:13,228 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Wed Jul 10 13:51:13 CST 2019]; root of context hierarchy
+2019-07-10 13:51:13,591 363    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-10 13:51:17,001 3773   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-10 13:51:19,055 5827   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 13:51:19,949 6721   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-10 13:51:20,098 6870   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-07-10 14:19:13,542 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Wed Jul 10 14:19:13 CST 2019]; root of context hierarchy
+2019-07-10 14:19:13,703 161    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-10 14:19:16,149 2607   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-10 14:19:17,897 4355   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 14:19:18,398 4856   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-10 14:19:18,454 4912   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-07-10 14:22:53,066 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Wed Jul 10 14:22:53 CST 2019]; root of context hierarchy
+2019-07-10 14:22:53,236 170    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-10 14:22:55,430 2364   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-10 14:22:56,416 3350   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 14:22:56,938 3872   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-10 14:22:56,997 3931   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-07-10 14:24:27,508 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Wed Jul 10 14:24:27 CST 2019]; root of context hierarchy
+2019-07-10 14:24:27,735 227    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-10 14:24:30,659 3151   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-10 14:24:33,056 5548   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-10 14:24:33,845 6337   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-07-10 14:24:33,924 6416   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-07-16 17:38:26,974 0      [           main] INFO  DefaultTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-07-16 17:38:27,050 76     [           main] INFO  DefaultTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1877ab81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305fd85d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@458c1321, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11438d26, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34cd072c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a1ebcd8]
+2019-07-16 17:38:27,469 495    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-16 17:38:29,343 2369   [           main] INFO  port.GenericApplicationContext  - Refreshing org.springframework.context.support.GenericApplicationContext@6950e31: startup date [Tue Jul 16 17:38:29 CST 2019]; root of context hierarchy
+2019-07-16 17:38:29,814 2840   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-16 17:38:32,015 5041   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-16 17:38:33,240 6266   [       Thread-0] INFO  port.GenericApplicationContext  - Closing org.springframework.context.support.GenericApplicationContext@6950e31: startup date [Tue Jul 16 17:38:29 CST 2019]; root of context hierarchy
+2019-07-16 17:38:33,262 6288   [       Thread-0] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2019-07-22 20:42:16,597 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Mon Jul 22 20:42:16 CST 2019]; root of context hierarchy
+2019-07-22 20:42:16,885 288    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-22 20:42:19,440 2843   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-22 20:42:21,654 5057   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-22 20:43:09,249 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77caeb3e: startup date [Mon Jul 22 20:43:09 CST 2019]; root of context hierarchy
+2019-07-22 20:43:09,427 178    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-22 20:43:10,934 1685   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-22 20:43:14,025 4776   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-28 21:00:41,468 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Sun Jul 28 21:00:41 CST 2019]; root of context hierarchy
+2019-07-28 21:00:41,671 203    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-28 21:00:43,968 2500   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-28 21:00:48,490 7022   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-07-28 21:01:31,380 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ae45eb6: startup date [Sun Jul 28 21:01:31 CST 2019]; root of context hierarchy
+2019-07-28 21:01:31,645 265    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-07-28 21:01:35,627 4247   [           main] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-28 21:01:38,722 7342   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited

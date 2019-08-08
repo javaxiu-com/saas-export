@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--1.注解用包扫描-->
+    <context:component-scan base-package="com.gyhqq.web"/>
+    <!--2.视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--3.mvc注解驱动: 在这里就顺便注册一下下面的日期类型转化器-->
+    <mvc:annotation-driven conversion-service="conversionService"/>
+
+    <!--配置日期类型转化器集合-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean id="dateConverter" class="com.gyhqq.web.converter.DateConverter"/>
+            </set>
+        </property>
+    </bean>
+
+    <mvc:default-servlet-handler/>
+
+    <!--开启对AOP注解的支持-->
+    <aop:aspectj-autoproxy/>
+
+    <!--注册异常处理器-->
+    <!--<bean class="CompanyException"></bean>-->
+
+    <!--dubbo整合spring配置dubbo的消费者-->
+    <dubbo:application name="export_web_manager"/>
+    <dubbo:registry address="zookeeper://192.168.72.123:2181"/>
+    <dubbo:annotation package="com.gyhqq.web.controller"></dubbo:annotation>
+    <!--消费者的启动检查
+        true : 在启动消费者服务的时候,会自动检测服务提供者是否存在
+               如果不存在会抛出异常
+               造成整个工程的启动失败
+        false : 启动不检查
+                在调用远程服务的时候,才会检查
+                开发环境我们用false,上线后一定改成true!-->
+    <dubbo:consumer check="false"/>
+
+    <!--图片上传: 文件解析器: id的值是固定的-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--设置上传文件的最大尺寸为 5MB-->
+        <property name="maxUploadSize" value="5242880"/>
+    </bean>
+
+
+    <!--定时器相关-->
+    <!--海关定时查询-->
+    <bean id="myJob" class="com.gyhqq.web.quartz.CronJob"/>
+    <bean id="myJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="myJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>queryResult</value>
+        </property>
+    </bean>
+
+    <bean id="myTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="work_default_name"/>
+        <property name="group" value="work_default"/>
+        <property name="jobDetail">
+            <ref bean="myJobDetail"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 0/1 0-6 ? * 1-7</value>
+        </property>
+    </bean>
+
+    <!--用计划就可以配多个触发器-->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="myTrigger"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--定时提醒企业管理员今日交货-->
+    <bean id="remindJob" class="com.gyhqq.web.quartz.ExpireRemindJob"/>
+    <bean id="remindJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="remindJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>remind</value>
+        </property>
+    </bean>
+
+    <bean id="remindTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="work_default_name"/>
+        <property name="group" value="work_default"/>
+        <property name="jobDetail">
+            <ref bean="remindJobDetail"/>
+        </property>
+        <property name="cronExpression">
+            <value>0 0 8 ? * 1-7</value>
+        </property>
+    </bean>
+
+    <!--用计划就可以配多个触发器-->
+    <bean id="remindScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="remindTrigger"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--消息生产者相关-->
+    <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://192.168.72.123:61616"></property>
+    </bean>
+    <!--缓存连接工厂-->
+    <bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <property name="targetConnectionFactory" ref="connectionFactory"></property>
+    </bean>
+
+    <!--3.spring整合消息中间件的重要的对象 JmsTemplate-->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="cachingConnectionFactory"></property>
+    </bean>
+
+    <!--4.创建目的地-->
+    <bean id="destination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg name="name" value="email"></constructor-arg>
+    </bean>
+
+</beans>

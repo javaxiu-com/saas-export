@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.stat.StatDao">
+
+
+    <select id="findFactoryData" resultType="java.util.Map">
+        SELECT SUM(amount) value,factory_name name FROM co_contract_product
+        WHERE company_id=#{loginCompanyId}
+        GROUP BY factory_name ORDER BY SUM(amount) DESC
+    </select>
+
+
+    <select id="findSellData" resultType="java.util.Map">
+        SELECT SUM(amount) value,factory_name name FROM co_contract_product
+        WHERE company_id=#{loginCompanyId}
+        GROUP BY factory_name ORDER BY SUM(amount) DESC limit 10
+    </select>
+
+
+    <select id="findOnlineData" resultType="map">
+      SELECT a.a1 name,IFNULL(b.num,'0')  value FROM st_online_info a LEFT JOIN
+      (SELECT COUNT(*) num,DATE_FORMAT(TIME,'%H') t1 FROM st_sys_log
+      WHERE company_id=#{loginCompanyId} GROUP BY DATE_FORMAT(TIME,'%H')
+      ORDER BY DATE_FORMAT(TIME,'%H') ) b
+      ON a.a1=b.t1
+    </select>
+    <!--统计top10 产品价格-->
+    <select id="findloginTopData" resultType="map">
+        SELECT SUM(price) value,loading_rate name FROM co_contract_product
+        WHERE company_id=#{loginCompanyId}
+        GROUP BY loading_rate ORDER BY SUM(price) DESC limit 10
+    </select>
+
+
+    <!--统计top10 产品价格-->
+    <select id="findloginIpData" resultType="map">
+        SELECT COUNT(ip) value,user_name name FROM st_sys_log
+        WHERE company_id=#{loginCompanyId}
+        GROUP BY user_name ORDER BY SUM(ip) DESC LIMIT 10
+    </select>
+
+</mapper>

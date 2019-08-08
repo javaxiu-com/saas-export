@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.system.RoleDao">
+    <resultMap id="BaseRoleMap" type="com.gyhqq.domain.system.Role">
+        <id column="role_id" property="id"/>
+        <id column="name" property="name"/>
+        <id column="remark" property="remark"/>
+        <id column="order_no" property="orderNo"/>
+        <id column="company_id" property="companyId"/>
+        <id column="company_name" property="companyName"/>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="BaseRoleMap">
+        select * from pe_role
+    </select>
+
+    <insert id="save">
+        insert into pe_role
+        (
+            role_id,
+            name,
+            remark,
+            order_no,
+            company_id,
+            company_name
+        )values(
+            #{id},
+            #{name},
+            #{remark},
+            #{orderNo},
+            #{companyId},
+            #{companyName}
+        )
+    </insert>
+
+    <select id="findById" resultMap="BaseRoleMap">
+        select * from pe_role where role_id =#{id}
+    </select>
+
+
+    <update id="update">
+        update pe_role set
+        name=#{name},
+        remark=#{remark},
+        order_no=#{orderNo},
+        company_id=#{companyId},
+        company_name=#{companyName}
+        where role_id = #{id}
+    </update>
+
+    <delete id="delete">
+        delete from pe_role where role_id = #{id}
+    </delete>
+
+    <delete id="deleteRoleModule">
+        delete from pe_role_module where role_id=#{id}
+    </delete>
+
+    <insert id="saveRoleModule">
+        insert into pe_role_module (role_id,module_id) values (#{roleid},#{moduleId})
+    </insert>
+
+    <select id="findByUserId" resultMap="BaseRoleMap">
+        SELECT b.* FROM pe_role_user a LEFT JOIN pe_role b ON a.role_id=b.role_id WHERE a.user_id=#{id}
+    </select>
+</mapper>

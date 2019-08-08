@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.system.UserDao">
+
+
+    <resultMap id="BaseMap" type="com.gyhqq.domain.system.User">
+        <id column="user_id" property="id"/>
+        <result column="dept_id" property="deptId"/>
+        <result column="email" property="email"/>
+        <result column="user_name" property="userName"/>
+        <result column="station" property="station"/>
+        <result column="password" property="password"/>
+        <result column="state" property="state"/>
+        <result column="company_id" property="companyId"/>
+        <result column="company_name" property="companyName"/>
+        <result column="dept_name" property="deptName"/>
+        <result column="manager_id" property="managerId"/>
+        <result column="gender" property="gender"/>
+        <result column="telephone" property="telephone"/>
+        <result column="birthday" property="birthday"/>
+        <result column="degree" property="degree"/>
+        <result column="salary" property="salary"/>
+        <result column="join_date" property="joinDate"/>
+        <result column="order_no" property="orderNo"/>
+        <result column="create_by" property="createBy"/>
+        <result column="create_dempt" property="createDempt"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_by" property="updateBy"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="remark" property="remark"/>
+        <result column="openId" property="openId"/>
+
+    </resultMap>
+    <select id="findAll" resultMap="BaseMap">
+        select * from pe_user where company_id= #{companyId}
+    </select>
+
+
+    <!--卧槽老是忘了加占位符-->
+    <insert id="save">
+        insert into pe_user
+        (
+        user_id,
+        dept_id,
+        email,
+        user_name,
+        station,
+        password,
+        state,
+        company_id,
+        company_name,
+        dept_name,
+        manager_id,
+        gender,
+        telephone,
+        birthday,
+        degree,
+        salary,
+        join_date,
+        order_no,
+        create_by,
+        create_dempt,
+        create_time,
+        update_by,
+        update_time,
+        remark,
+        openId
+        )VALUES
+        (
+        #{id},
+        #{deptId},
+        #{email},
+        #{userName},
+        #{station},
+        #{password},
+        #{state,},
+        #{companyId},
+        #{companyName},
+        #{deptName},
+        #{managerId},
+        #{gender},
+        #{telephone},
+        #{birthday},
+        #{degree},
+        #{salary},
+        #{joinDate},
+        #{orderNo},
+        #{createBy},
+        #{createDempt},
+        #{createTime},
+        #{updateBy},
+        #{updateTime},
+        #{remark},
+        #{openId}
+        )
+    </insert>
+
+    <select id="findById" resultMap="BaseMap">
+        select * from pe_user where user_id =#{id}
+    </select>
+
+    <update id="update">
+        update pe_user set
+        dept_id=#{deptId},
+        email=#{email},
+        user_name=#{userName},
+        station=#{station},
+        password=#{password},
+        state=#{state},
+        company_id=#{companyId},
+        company_name=#{companyName},
+        dept_name=#{deptName},
+        manager_id=#{managerId},
+        gender=#{gender},
+        telephone=#{telephone},
+        birthday=#{birthday},
+        degree=#{degree},
+        salary=#{salary},
+        join_date=#{joinDate},
+        order_no=#{orderNo},
+        create_by=#{createBy},
+        create_dempt=#{createDempt},
+        create_time=#{createTime},
+        update_by=#{updateBy},
+        update_time=#{updateTime},
+        remark=#{remark},
+        openId=#{openId}
+        where user_id=#{id}
+    </update>
+
+    <delete id="delete">
+        delete from pe_user where user_id= #{id}
+    </delete>
+
+    <delete id="deleteByUserId">
+        delete from pe_role_user where user_id=#{id}
+    </delete>
+
+    <insert id="saveByUserRole">
+        insert into pe_role_user
+        (user_id,role_id)
+        VALUES
+        (#{usreid},#{roleId})
+    </insert>
+
+    <!--根据邮箱查找用户-->
+    <select id="findByEmail" resultMap="BaseMap">
+        select * from pe_user where email=#{email}
+    </select>
+
+    <!--查找某个公司的企业管理员-->
+    <select id="findByCondition" resultMap="BaseMap">
+        select * from pe_user where degree=#{degree} and company_id=#{companyId}
+    </select>
+
+    <!--查找saas管理员email-->
+    <select id="findSaaSEmail" resultType="java.lang.String">
+        select email from pe_user where degree=#{degree}
+    </select>
+
+    <!--根据公司id查询所有用户,自己除外-->
+    <select id="findAllNotMime" resultMap="BaseMap">
+        SELECT * FROM pe_user WHERE company_id=#{loginCompanyId} AND user_id != #{id}
+    </select>
+
+    <select id="findByOpenId" resultMap="BaseMap">
+        select * from pe_user where openId = #{openId}
+    </select>
+
+    <update id="addOpenId">
+        update pe_user set openId = #{openId} where email = #{email}
+    </update>
+</mapper>

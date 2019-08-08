@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.company.CompanyDao">
+
+    <resultMap id="companyMap" type="com.gyhqq.domain.company.Company">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="expiration_date" property="expirationDate"/>
+        <result column="address" property="address"/>
+        <result column="license_id" property="licenseId"/>
+        <result column="representative " property="representative "/>
+        <result column="phone" property="phone"/>
+        <result column="company_size" property="companySize"/>
+        <result column="industry" property="industry"/>
+        <result column="remarks" property="remarks"/>
+        <result column="state" property="state"/>
+        <result column="balance" property="balance"/>
+        <result column="city" property="city"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="companyMap">
+        select * from ss_company
+    </select>
+
+    <select id="findTotalRecord" resultType="java.lang.Integer">
+        select count(*) from ss_company
+    </select>
+
+    <insert id="save">
+        insert into ss_company (
+        id,
+        name,
+        expiration_date,
+        address,
+        license_id,
+        representative,
+        phone,
+        company_size,
+        industry,
+        remarks,
+        state,
+        balance,
+        city
+        )values(
+        #{id},
+        #{name},
+        #{expirationDate},
+        #{address},
+        #{licenseId},
+        #{representative},
+        #{phone},
+        #{companySize},
+        #{industry},
+        #{remarks},
+        #{state},
+        #{balance},
+        #{city}
+        )
+    </insert>
+
+    <select id="findById" resultType="com.gyhqq.domain.company.Company">
+        select * from ss_company where id =#{id}
+    </select>
+
+    <update id="updateCompany">
+       update ss_company set
+       name=#{name},
+       expiration_date=#{expirationDate},
+       address=#{address},
+       license_id=#{licenseId},
+       representative=#{representative},
+       phone=#{phone},
+       company_size=#{companySize},
+       industry=#{industry},
+       remarks=#{remarks},
+       state=#{state},
+       balance=#{balance},
+       city=#{city}
+       where id=#{id}
+
+    </update>
+
+    <delete id="delete">
+        delete from ss_company where id = #{id}
+    </delete>
+</mapper>

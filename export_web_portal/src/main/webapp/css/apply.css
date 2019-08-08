@@ -1,0 +1,172 @@
+a:focus, a:hover {
+    text-decoration: none;
+}
+/* nav */
+.navbar-header .navbar-brand {
+    height: inherit;
+    padding: 0;
+}
+header .navbar-default {
+    background: #fff !important;
+    border: none;
+    border-radius: 0px;
+    min-height: inherit;
+    margin: 0;
+    padding: 20px 0;
+}
+@media (min-width: 768px){
+    .navbar-right {
+        margin-right: 35px;
+    }
+}
+header .navbar-default .navbar-nav > li.active > a {
+    color: #00c6f0
+}
+header .navbar-default .navbar-nav > li > a:hover, header .navbar-default .navbar-nav > li > a:focus, header .navbar-default .navbar-nav > li.active > a, header .navbar-default .navbar-nav > li.active > a:focus, header .navbar-default .navbar-nav > li.active > a:hover {
+    background: none;
+    box-shadow: none;
+    color: #00c6f0
+    
+}
+header .navbar-nav > li {
+    margin: 0 60px 0 0;
+}
+header .navbar-default .navbar-nav > li > a {
+    color: #333333;
+    padding: 15px 2px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+header .nav > li a::before {
+    background: #00c6f0;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    transition: all 0.3s ease-out 0s;
+    border-radius: 10px;
+}
+header .nav > li.active > a::before, header .nav > li:hover > a::before, header .nav > li > a:hover::before {
+    width: 100%;
+}
+header .button {
+    padding: 6px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left: 20px;
+    color: #fff
+}
+header .login-btn {
+    background-color: #171046;
+}
+header .apply-btn {
+    background-color: #00c6f0;
+}
+
+
+/*  */
+
+ #check span { 
+     position: relative;
+     display: inline-block;
+     }
+ #check .input_check {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     visibility: hidden;
+}
+#check .input_check+label {
+     display: inline-block;
+     width: 19px;
+     height: 19px;
+     background: url('../images/checked.png') no-repeat;
+     background-position: -31px -3px;
+     border-radius: 3px;
+     border: 1px solid #c1c6c3;
+}
+#check .input_check:checked+label {
+    background-position: -1px -1px;
+}
+#check label {
+    display: inline-block;
+    vertical-align: top;
+    color: #9999b3;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.apply-form {
+    padding: 60px 0 150px;
+    background: #e2e2e2;
+}
+.apply-form .form-box {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.form-box .title {
+    background-image: url(../images/formtitle.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    color: #ffc956;
+    text-align: center;
+}
+.form-box .title h4, .form-box .title p{margin: 0;}
+.form-box .form-group {
+    width: 90%;
+    margin: 25px auto;
+}
+.form-box .form-group .form-control {
+    line-height: 2;
+    height: 38px;
+}
+.form-box .submit {
+    text-align: center;
+}
+.form-box .submit .btn-default {
+    background: #00c6f0;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+/* footer  */
+.footer {
+    padding-bottom: 30px;
+    background: #111;
+}
+.footer .item {
+    padding-top: 30px;
+    /* width: 90%; */
+}
+.footer .item img {
+    float: left;
+    padding-right: 8px;
+}
+.footer .item .item-text {
+    color: #888;
+}
+
+.footer  .phonenumber {
+    color: #00c6f0;
+    font-size: 26px;
+    font-weight: normal;
+}
+.footer p {
+    font-size: 16px;
+}
+.footer .right {
+    text-align: center
+}

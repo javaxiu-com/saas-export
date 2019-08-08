@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gyhqq.dao.cargo.ContractDao">
+    <resultMap id="BaseResultMap" type="com.gyhqq.domain.cargo.Contract">
+        <id column="id" property="id" />
+        <result column="offeror" property="offeror" />
+        <result column="contract_no" property="contractNo" />
+        <result column="signing_date" property="signingDate" />
+        <result column="input_by" property="inputBy" />
+        <result column="check_by" property="checkBy" />
+        <result column="inspector" property="inspector" />
+        <result column="total_amount" property="totalAmount" />
+        <result column="crequest" property="crequest" />
+        <result column="custom_name"  property="customName" />
+        <result column="ship_time" property="shipTime" />
+        <result column="import_num" property="importNum" />
+        <result column="delivery_period" property="deliveryPeriod" />
+        <result column="old_state"  property="oldState" />
+        <result column="out_state"  property="outState" />
+        <result column="trade_terms" property="tradeTerms" />
+        <result column="print_style" property="printStyle" />
+        <result column="remark" property="remark" />
+        <result column="state"  property="state" />
+        <result column="ext_num"  property="extNum" />
+        <result column="pro_num"  property="proNum" />
+        <result column="create_by"    property="createBy" />
+        <result column="create_dept"  property="createDept" />
+        <result column="create_time"  property="createTime" />
+        <result column="update_by"    property="updateBy" />
+        <result column="update_time"  property="updateTime" />
+        <result column="company_id"   property="companyId" />
+        <result column="company_name" property="companyName" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id, offeror, contract_no, signing_date, input_by, check_by, inspector, total_amount,
+        crequest, custom_name, ship_time, import_num, delivery_period, old_state, out_state,
+        trade_terms, print_style, remark, state,pro_num,ext_num, create_by, create_dept, create_time, update_by,
+        update_time, company_id, company_name
+    </sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <select id="selectByExample" parameterType="com.gyhqq.domain.cargo.ContractExample" resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+        from co_contract
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <!--根据id查询-->
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+      select <include refid="Base_Column_List" /> from co_contract where id = #{id,jdbcType=VARCHAR}
+    </select>
+
+    <!--根据id删除-->
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+      delete from co_contract where id = #{id,jdbcType=VARCHAR}
+    </delete>
+
+    <!--保存-->
+    <insert id="insertSelective" parameterType="com.gyhqq.domain.cargo.Contract">
+        insert into co_contract
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+          <if test="id != null">
+            id,
+          </if>
+          <if test="offeror != null">
+            offeror,
+          </if>
+          <if test="contractNo != null">
+            contract_no,
+          </if>
+          <if test="signingDate != null">
+            signing_date,
+          </if>
+          <if test="inputBy != null">
+            input_by,
+          </if>
+          <if test="checkBy != null">
+            check_by,
+          </if>
+          <if test="inspector != null">
+            inspector,
+          </if>
+          <if test="totalAmount != null">
+            total_amount,
+          </if>
+          <if test="crequest != null">
+            crequest,
+          </if>
+          <if test="customName != null">
+            custom_name,
+          </if>
+          <if test="shipTime != null">
+            ship_time,
+          </if>
+          <if test="importNum != null">
+            import_num,
+          </if>
+          <if test="deliveryPeriod != null">
+            delivery_period,
+          </if>
+          <if test="oldState != null">
+            old_state,
+          </if>
+          <if test="outState != null">
+            out_state,
+          </if>
+          <if test="tradeTerms != null">
+            trade_terms,
+          </if>
+          <if test="printStyle != null">
+            print_style,
+          </if>
+          <if test="remark != null">
+            remark,
+          </if>
+          <if test="state != null">
+            state,
+          </if>
+            <if test="proNum != null">
+                pro_num,
+            </if>
+            <if test="extNum != null">
+                ext_num,
+            </if>
+          <if test="createBy != null">
+            create_by,
+          </if>
+          <if test="createDept != null">
+            create_dept,
+          </if>
+          <if test="createTime != null">
+            create_time,
+          </if>
+          <if test="updateBy != null">
+            update_by,
+          </if>
+          <if test="updateTime != null">
+            update_time,
+          </if>
+          <if test="companyId != null">
+            company_id,
+          </if>
+          <if test="companyName != null">
+            company_name,
+          </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+          <if test="id != null">
+            #{id,jdbcType=VARCHAR},
+          </if>
+          <if test="offeror != null">
+            #{offeror,jdbcType=VARCHAR},
+          </if>
+          <if test="contractNo != null">
+            #{contractNo,jdbcType=VARCHAR},
+          </if>
+          <if test="signingDate != null">
+            #{signingDate,jdbcType=TIMESTAMP},
+          </if>
+          <if test="inputBy != null">
+            #{inputBy,jdbcType=VARCHAR},
+          </if>
+          <if test="checkBy != null">
+            #{checkBy,jdbcType=VARCHAR},
+          </if>
+          <if test="inspector != null">
+            #{inspector,jdbcType=VARCHAR},
+          </if>
+          <if test="totalAmount != null">
+            #{totalAmount,jdbcType=DECIMAL},
+          </if>
+          <if test="crequest != null">
+            #{crequest,jdbcType=VARCHAR},
+          </if>
+          <if test="customName != null">
+            #{customName,jdbcType=VARCHAR},
+          </if>
+          <if test="shipTime != null">
+            #{shipTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="importNum != null">
+            #{importNum,jdbcType=DECIMAL},
+          </if>
+          <if test="deliveryPeriod != null">
+            #{deliveryPeriod,jdbcType=TIMESTAMP},
+          </if>
+          <if test="oldState != null">
+            #{oldState,jdbcType=DECIMAL},
+          </if>
+          <if test="outState != null">
+            #{outState,jdbcType=DECIMAL},
+          </if>
+          <if test="tradeTerms != null">
+            #{tradeTerms,jdbcType=VARCHAR},
+          </if>
+          <if test="printStyle != null">
+            #{printStyle,jdbcType=CHAR},
+          </if>
+          <if test="remark != null">
+            #{remark,jdbcType=VARCHAR},
+          </if>
+          <if test="state != null">
+            #{state,jdbcType=DECIMAL},
+          </if>
+            <if test="proNum != null">
+                #{proNum},
+            </if>
+            <if test="extNum != null">
+                #{extNum},
+            </if>
+          <if test="createBy != null">
+            #{createBy,jdbcType=VARCHAR},
+          </if>
+          <if test="createDept != null">
+            #{createDept,jdbcType=VARCHAR},
+          </if>
+          <if test="createTime != null">
+            #{createTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="updateBy != null">
+            #{updateBy,jdbcType=VARCHAR},
+          </if>
+          <if test="updateTime != null">
+            #{updateTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="companyId != null">
+            #{companyId,jdbcType=VARCHAR},
+          </if>
+          <if test="companyName != null">
+            #{companyName,jdbcType=VARCHAR},
+          </if>
+        </trim>
+    </insert>
+
+    <!--根据id更新-->
+    <update id="updateByPrimaryKeySelective" parameterType="com.gyhqq.domain.cargo.Contract">
+      update co_contract
+        <set>
+          <if test="offeror != null">
+            offeror = #{offeror,jdbcType=VARCHAR},
+          </if>
+          <if test="contractNo != null">
+            contract_no = #{contractNo,jdbcType=VARCHAR},
+          </if>
+          <if test="signingDate != null">
+            signing_date = #{signingDate,jdbcType=TIMESTAMP},
+          </if>
+          <if test="inputBy != null">
+            input_by = #{inputBy,jdbcType=VARCHAR},
+          </if>
+          <if test="checkBy != null">
+            check_by = #{checkBy,jdbcType=VARCHAR},
+          </if>
+          <if test="inspector != null">
+            inspector = #{inspector,jdbcType=VARCHAR},
+          </if>
+          <if test="totalAmount != null">
+            total_amount = #{totalAmount,jdbcType=DECIMAL},
+          </if>
+          <if test="crequest != null">
+            crequest = #{crequest,jdbcType=VARCHAR},
+          </if>
+          <if test="customName != null">
+            custom_name = #{customName,jdbcType=VARCHAR},
+          </if>
+          <if test="shipTime != null">
+            ship_time = #{shipTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="importNum != null">
+            import_num = #{importNum,jdbcType=DECIMAL},
+          </if>
+          <if test="deliveryPeriod != null">
+            delivery_period = #{deliveryPeriod,jdbcType=TIMESTAMP},
+          </if>
+          <if test="oldState != null">
+            old_state = #{oldState,jdbcType=DECIMAL},
+          </if>
+          <if test="outState != null">
+            out_state = #{outState,jdbcType=DECIMAL},
+          </if>
+          <if test="tradeTerms != null">
+            trade_terms = #{tradeTerms,jdbcType=VARCHAR},
+          </if>
+          <if test="printStyle != null">
+            print_style = #{printStyle,jdbcType=CHAR},
+          </if>
+          <if test="remark != null">
+            remark = #{remark,jdbcType=VARCHAR},
+          </if>
+          <if test="state != null">
+            state = #{state,jdbcType=DECIMAL},
+          </if>
+          <if test="proNum != null">
+              pro_num = #{proNum},
+            </if>
+            <if test="extNum != null">
+                ext_num = #{extNum},
+            </if>
+          <if test="createBy != null">
+            create_by = #{createBy,jdbcType=VARCHAR},
+          </if>
+          <if test="createDept != null">
+            create_dept = #{createDept,jdbcType=VARCHAR},
+          </if>
+          <if test="createTime != null">
+            create_time = #{createTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="updateBy != null">
+            update_by = #{updateBy,jdbcType=VARCHAR},
+          </if>
+          <if test="updateTime != null">
+            update_time = #{updateTime,jdbcType=TIMESTAMP},
+          </if>
+          <if test="companyId != null">
+            company_id = #{companyId,jdbcType=VARCHAR},
+          </if>
+          <if test="companyName != null">
+            company_name = #{companyName,jdbcType=VARCHAR},
+          </if>
+        </set>
+        where id = #{id,jdbcType=VARCHAR}
+    </update>
+    <!--根据交货时间查询合同-->
+    <select id="findContractByDeliveryPeriod" resultMap="BaseResultMap">
+        SELECT * FROM co_contract WHERE delivery_period LIKE "%"#{time}"%"
+    </select>
+</mapper>
