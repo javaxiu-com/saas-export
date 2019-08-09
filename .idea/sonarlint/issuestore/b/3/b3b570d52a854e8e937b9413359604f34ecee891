@@ -1,31 +1,0 @@
-
-dsquid:S1192¢"MDefine a constant instead of duplicating this literal "companyName" 12 times.(©¨«'
-hsquid:S1192à"KDefine a constant instead of duplicating this literal "inputTime" 10 times.(µï´Æüÿÿÿÿ
-Jsquid:S1948!".Make "oredCriteria" transient or serializable.(ßäü§ÿÿÿÿÿ
-qsquid:S2293¥"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
-isquid:S1192Ú	"LDefine a constant instead of duplicating this literal "createDept" 12 times.(Œ»áÑüÿÿÿÿ
-isquid:S1192 
-"LDefine a constant instead of duplicating this literal "createTime" 10 times.(ÇàÌóûÿÿÿÿ
-isquid:S1192ü"LDefine a constant instead of duplicating this literal "resolution" 12 times.(á‰ØÔøÿÿÿÿ
-dsquid:S1192Â"LDefine a constant instead of duplicating this literal "difficulty" 12 times.(–Ü©ˆ
-isquid:S1192ú"LDefine a constant instead of duplicating this literal "answerTime" 10 times.(ÑçºÔýÿÿÿÿ
-dsquid:S00112½"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºþÿÿÿÿ
-^squid:S00112Ä"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
-
-dsquid:S1192Ô"LDefine a constant instead of duplicating this literal "feedbackId" 12 times.(©†¶ð
-fsquid:S1192â"IDefine a constant instead of duplicating this literal "content" 12 times.(«á¶óûÿÿÿÿ
-xsquid:S1488Š"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
-gsquid:S1192´"JDefine a constant instead of duplicating this literal "answerBy" 12 times.(æñŸ›ýÿÿÿÿ
-dsquid:S1192Î"GDefine a constant instead of duplicating this literal "state" 12 times.(¬À‰ñúÿÿÿÿ
-asquid:S1192š"IDefine a constant instead of duplicating this literal "inputBy" 12 times.(Ž’¾
-fsquid:S1192ˆ"IDefine a constant instead of duplicating this literal "isShare" 12 times.(€êØ¶þÿÿÿÿ
-[squid:S1155©">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
-jsquid:S1192¶"MDefine a constant instead of duplicating this literal "solveMethod" 12 times.(õ°¾«ýÿÿÿÿ
-dsquid:S00112¶"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
-Tsquid:S1155}">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
-osquid:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
-hsquid:S1192¨"KDefine a constant instead of duplicating this literal "classType" 12 times.(š¡Š®ùÿÿÿÿ
-_squid:S1192œ"GDefine a constant instead of duplicating this literal "title" 12 times.(“õ¾¤
-bsquid:S1192”	"JDefine a constant instead of duplicating this literal "createBy" 12 times.(¾õÆÈ
-hsquid:S1192Ü
-"KDefine a constant instead of duplicating this literal "companyId" 12 times.(ÈøÔÐûÿÿÿÿ

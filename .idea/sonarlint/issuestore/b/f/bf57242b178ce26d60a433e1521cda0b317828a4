@@ -1,33 +1,0 @@
-
-hsquid:S1192¤"KDefine a constant instead of duplicating this literal "productNo" 12 times.(Ö»ˆüÿÿÿÿ
-fsquid:S1192ˆ	"IDefine a constant instead of duplicating this literal "orderNo" 10 times.(Ö„şóùÿÿÿÿ
-fsquid:S1192Ô"IDefine a constant instead of duplicating this literal "exPrice" 10 times.(Á‘‰¥ıÿÿÿÿ
-dsquid:S00112»"FDefine and throw a dedicated exception instead of using a generic one.(õÜ—ºşÿÿÿÿ
-hsquid:S1192ä"KDefine a constant instead of duplicating this literal "netWeight" 10 times.(œØöùÿÿÿÿ
-Jsquid:S1948Ş
-"-Make "secondValue" transient or serializable.(½ì³øÿÿÿÿ
-hsquid:S1192Ü"KDefine a constant instead of duplicating this literal "sizeWidth" 10 times.(†Ùàöùÿÿÿÿ
-xsquid:S1488ˆ"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(¶Õ¯ì
-csquid:S1192Ä	"KDefine a constant instead of duplicating this literal "companyId" 12 times.(İ®Ûù
-qsquid:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(óÎ³Ù
-Esquid:S1948")Make "oredCriteria" private or transient.(ßäü§ÿÿÿÿÿ
-jsquid:S1192ê"MDefine a constant instead of duplicating this literal "packingUnit" 12 times.(ŞúİÏıÿÿÿÿ
-`squid:S1192ì"HDefine a constant instead of duplicating this literal "boxNum" 10 times.(×È™º
-csquid:S1192Ş"KDefine a constant instead of duplicating this literal "factoryId" 12 times.(£¹Ê›
-gsquid:S1192˜"JDefine a constant instead of duplicating this literal "exportId" 12 times.(éÀ–Éûÿÿÿÿ
-dsquid:S1192"GDefine a constant instead of duplicating this literal "price" 10 times.(º ‘Öøÿÿÿÿ
-?squid:S1948Ü
-"'Make "value" transient or serializable.(şû½ˆ
-`squid:S1192°"IDefine a constant instead of duplicating this literal "cnumber" 10 times.(á´j
-Bsquid:S1948Ÿ"%Make "criteria" private or transient.(Éôü£ûÿÿÿÿ
-osquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏßÉe
-dsquid:S00112´"FDefine and throw a dedicated exception instead of using a generic one.(ÔÁñÍøÿÿÿÿ
-jsquid:S1192¨"MDefine a constant instead of duplicating this literal "grossWeight" 10 times.(ïë¡ÿÿÿÿÿ
-Tsquid:S1155{">Use isEmpty() to check whether the collection is empty or not.(Á½¼s
-jsquid:S1192Š
-"MDefine a constant instead of duplicating this literal "companyName" 12 times.(ˆ„éòüÿÿÿÿ
-[squid:S1155§">Use isEmpty() to check whether the collection is empty or not.(í´Õûüÿÿÿÿ
-^squid:S00112Â"FDefine and throw a dedicated exception instead of using a generic one.(ìá¤
-
-dsquid:S1192˜"LDefine a constant instead of duplicating this literal "sizeHeight" 10 times.(¡„éÿ
-isquid:S1192 "LDefine a constant instead of duplicating this literal "sizeLength" 10 times.(¹éÁÉúÿÿÿÿ

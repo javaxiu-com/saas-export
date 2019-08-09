@@ -1,6 +1,0 @@
-
-gsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(—ñ‰þÿÿÿÿ
-^squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Í‡‚¿
-bsquid:S1192#"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(ïè¶ªûÿÿÿÿ
-Qsquid:S1118
-":Add a private constructor to hide the implicit public one.(»ìÒá

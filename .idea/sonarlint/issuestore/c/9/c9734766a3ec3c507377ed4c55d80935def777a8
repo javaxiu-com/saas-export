@@ -1,8 +1,0 @@
-
-¤%squid:RedundantThrowsDeclarationCheck`"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Ëè“Š8¦ëÄ†Ç-
-Esquid:S1199‹"-Extract this nested code block into a method.(ŸôÁ½
-Isquid:S1199"-Extract this nested code block into a method.(Ïˆéåıÿÿÿÿ
-nsquid:S11924"KDefine a constant instead of duplicating this literal "contractId" 3 times.(ÇçÍ‹ûÿÿÿÿ8¦ëÄ†Ç-
-Gsquid:S00108")Either remove or fill this block of code.(Î—­Šşÿÿÿÿ
-Jsquid:S1199"-Extract this nested code block into a method.(Î—­Šşÿÿÿÿ
-Jsquid:S1199ƒ"-Extract this nested code block into a method.(´ş•¸ùÿÿÿÿ
