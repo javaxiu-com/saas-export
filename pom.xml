@@ -28,7 +28,7 @@
     <!-- 集中定义依赖版本号 -->
     <properties>
         <junit.version>4.12</junit.version>
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <pagehelper.version>5.1.2</pagehelper.version>
         <servlet-api.version>2.5</servlet-api.version>
         <mybatis.version>3.2.8</mybatis.version>
